@@ -1,0 +1,58 @@
+<odoo>
+    <!-- Tree View  for patent information-->
+    <record id="hospital_appointment_tree_view" model="ir.ui.view">
+        <field name="name">hospital.appointment.tree.view</field>
+        <field name="model">hospital.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Appointment Information">
+                <field name="sequence" widget="handle"/>
+                <field name="patient_name"/>
+                <field name="doctor_id"/>
+                <field name="dob"/>
+                <field name="gender"/>
+                <field name="m_status"/>
+                <field name="blood_group"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="appointment_form_view" model="ir.ui.view">
+        <field name="name">hospital.appointment.form.view</field>
+        <field name="model">hospital.appointment</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avtar"/>
+                    <h2><field name="patient_name" placeholder="Name"/></h2>
+                    <group string="Appointment Information">
+                        <group>
+                            <field name="patient_name"/>
+                            <field name="gender"/>
+                            <field name="blood_group"/>
+                            <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="date_of_appointment" />
+                            <field name="m_status" />
+                            <field name="dob"/>
+                            <field name="contact"/>
+                            <field name="doctor_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_appointment" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="res_model">hospital.appointment</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+
+    <menuitem id = "hospital_appointment_menu"
+              name = "Appointments" action="action_appointment"
+              parent = "hospital_root_menu"
+              sequence="4"/>
+    <!-- End Menu -->
+</odoo>

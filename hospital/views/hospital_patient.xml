@@ -1,15 +1,4 @@
 <odoo>
-    <!-- Menu -->
-    <menuitem id = "hospital_root_menu"
-              name = "Hospital"
-              web_icon = "hospital/static/description/icon.png"
-              sequence = "1"/>
-    <menuitem id = "hospital_patient_menu"
-              name = "patients" action="action_patients"
-              parent = "hospital_root_menu"
-              sequence="2"/>
-    <!-- End Menu -->
-
     <!-- Tree View  for patent information-->
     <record id="hospital_patients_tree_view" model="ir.ui.view">
         <field name="name">hospital.patient.tree.view</field>
@@ -17,7 +6,9 @@
         <field name="arch" type="xml">
             <tree string="Patient Information">
                 <field name="name"/>
+                <field name="dob"/>
                 <field name="gender"/>
+                <field name="m_status"/>
                 <field name="blood_group"/>
                 <field name="address"/>
             </tree>
@@ -32,12 +23,17 @@
                 <sheet>
                     <field name="image" widget="image" class="oe_avtar"/>
                     <h2><field name="name" placeholder="Name"/></h2>
-                    <group string="Hospital Information">
+                    <group string="Patient Information">
                         <group>
                             <field name="name"/>
                             <field name="gender"/>
                             <field name="blood_group"/>
                             <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="m_status" />
+                            <field name="dob"/>
+                            <field name="contact"/>
                         </group>
                     </group>
                 </sheet>
@@ -96,4 +92,14 @@
             </calendar>
         </field>
     </record>-->
+    <!-- Menu -->
+    <menuitem id = "hospital_root_menu"
+              name = "Hospital"
+              web_icon = "hospital/static/description/icon.png"
+              sequence = "1"/>
+    <menuitem id = "hospital_patient_menu"
+              name = "patients" action="action_patients"
+              parent = "hospital_root_menu"
+              sequence="2"/>
+    <!-- End Menu -->
 </odoo>

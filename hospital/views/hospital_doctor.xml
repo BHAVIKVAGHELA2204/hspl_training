@@ -20,7 +20,9 @@
             <form>
                 <sheet>
                     <field name="image" widget="image" class="oe_avtar"/>
-                    <h2><field name="name" placeholder="Name"/></h2>
+                    <h2>
+                        <field name="name" placeholder="Name"/>
+                    </h2>
                     <group string="Hospital Information">
                         <group>
                             <field name="name"/>
@@ -38,8 +40,8 @@
         <field name="res_model">hospital.doctor</field>
         <field name="view_mode">tree,form,kanban,graph</field>
     </record>
-    <menuitem id = "doctor_report_menu"
-              name = "doctors" action="action_doctor"
-              parent = "hospital_root_menu"
+    <menuitem id="doctor_report_menu"
+              name="doctors" action="action_doctor"
+              parent="hospital_root_menu"
               sequence="3"/>
 </odoo>
