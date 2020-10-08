@@ -1,0 +1,45 @@
+<odoo>
+    <!-- Tree View  for patent information-->
+    <record id="hospital_doctor_tree_view" model="ir.ui.view">
+        <field name="name">hospital.doctor.tree.view</field>
+        <field name="model">hospital.doctor</field>
+        <field name="arch" type="xml">
+            <tree string="Doctor Information">
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="blood_group"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="doctor_form_view" model="ir.ui.view">
+        <field name="name">hospital.doctor.form.view</field>
+        <field name="model">hospital.doctor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avtar"/>
+                    <h2><field name="name" placeholder="Name"/></h2>
+                    <group string="Hospital Information">
+                        <group>
+                            <field name="name"/>
+                            <field name="gender"/>
+                            <field name="blood_group"/>
+                            <field name="address"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_doctor" model="ir.actions.act_window">
+        <field name="name">doctors</field>
+        <field name="res_model">hospital.doctor</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+    <menuitem id = "doctor_report_menu"
+              name = "doctors" action="action_doctor"
+              parent = "hospital_root_menu"
+              sequence="3"/>
+</odoo>

@@ -1,0 +1,99 @@
+<odoo>
+    <!-- Menu -->
+    <menuitem id = "hospital_root_menu"
+              name = "Hospital"
+              web_icon = "hospital/static/description/icon.png"
+              sequence = "1"/>
+    <menuitem id = "hospital_patient_menu"
+              name = "patients" action="action_patients"
+              parent = "hospital_root_menu"
+              sequence="2"/>
+    <!-- End Menu -->
+
+    <!-- Tree View  for patent information-->
+    <record id="hospital_patients_tree_view" model="ir.ui.view">
+        <field name="name">hospital.patient.tree.view</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <tree string="Patient Information">
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="blood_group"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="student_form_view" model="ir.ui.view">
+        <field name="name">hospital.patient.form.view</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avtar"/>
+                    <h2><field name="name" placeholder="Name"/></h2>
+                    <group string="Hospital Information">
+                        <group>
+                            <field name="name"/>
+                            <field name="gender"/>
+                            <field name="blood_group"/>
+                            <field name="address"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_patients" model="ir.actions.act_window">
+        <field name="name">patients</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+    <!-- kanban view -->
+    <!--<record id="student_kanban" model="ir.ui.view">
+        <field name="name">student.kanban.view</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="student_id"/>
+                <field name="image_128"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img alt="Avatar"
+                                t-att-src="kanban_image('student.student', 'image_128',record.id.raw_value)"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <t class="o_kanban_record_title">
+                                    <strong t-esc="record.name.value"/>
+                                </t>
+                                <div t-if="record.age.value">
+                                   <t t-esc="record.age.value"/>
+                                </div>
+                                <div t-if="record.gender.value">
+                                   <t t-esc="record.gender.value"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>-->
+    <!-- calendar view -->
+    <!--<record id="student_attendance_calendar" model="ir.ui.view">
+        <field name="name">student.attendance.calendar</field>
+        <field name="model">model.student</field>
+        <field name="arch" type="xml">
+            <calendar string="Attendance" date_start="date_request" date_stop="return_date" event_open_popup="true" mode="month" color="person_name" quick_add="False">
+                <field name="person_name"/>
+                <field name="technician_name"/>
+            </calendar>
+        </field>
+    </record>-->
+</odoo>
