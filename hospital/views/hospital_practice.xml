@@ -1,0 +1,101 @@
+<odoo>
+    <!-- Tree View  for practice information-->
+    <record id="hospital_practice_tree_view" model="ir.ui.view">
+        <field name="name">hospital.practice.tree.view</field>
+        <field name="model">hospital.practice</field>
+        <field name="arch" type="xml">
+            <tree string="Practice Information">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="dob"/>
+                <field name="gender"/>
+                <field name="primary_color"/>
+                <field name="blood_group"/>
+                <field name="address"/>
+                <field name="payment_type"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="student_form_view" model="ir.ui.view">
+        <field name="name">hospital.practice.form.view</field>
+        <field name="model">hospital.practice</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="image_padding"/>
+                    <h2><field name="name" placeholder="Name"/></h2>
+                    <group string="Practice Information">
+                        <group>
+                            <field name="sequence"/>
+                            <field name="phone" widget="phone"/>
+                            <field name="name"/>
+                            <field name="gender"/>
+                            <field name="blood_group"/>
+                            <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="primary_color" widget="color"/>
+                            <field name="time_duration" widget="float_time"/>
+                            <field name="state" widget="statinfo"/>
+                            <field name="payment_type" widget="radio"/>
+                            <field name="google_url" widget="url"/>
+                            <field name="dob"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Kanban View -->
+    <record id="hospital_practice_kanban" model="ir.ui.view">
+       <field name="name">hospital.practice.kanban.view</field>
+       <field name="model">hospital.practice</field>
+       <field name="arch" type="xml">
+           <kanban>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="dob"/>
+                <field name="gender"/>
+                <field name="primary_color"/>
+                <field name="blood_group"/>
+                <field name="address"/>
+                <field name="payment_type"/>
+               <templates>
+                   <t t-name="kanban-box">
+                       <div t-attf-class="oe_kanban_global_click">
+                           <div class="o_kanban_image">
+                               <img alt="Avatar"
+                                    t-att-src="kanban_image()"/>
+                           </div>
+                           <div class="oe_kanban_details">
+                               <t class="o_kanban_record_title">
+                                  <field name="name"/>
+                               </t>
+                               <div> <!--t-if="record.age.value"-->
+                                   <field name="dob"/>
+                               </div>
+                               <div> <!--t-if="record.gender.value"-->
+                                   <field name="address"/>
+                               </div>
+                           </div>
+                       </div>
+                   </t>
+               </templates>
+           </kanban>
+       </field>
+    </record>
+
+    <record id="action_practice" model="ir.actions.act_window">
+        <field name="name">practice</field>
+        <field name="res_model">hospital.practice</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id = "hospital_practice_menu"
+              name = "Practice" action="action_practice"
+              parent = "hospital_root_menu"
+              sequence="6"/>
+    <!-- End Menu -->
+</odoo>

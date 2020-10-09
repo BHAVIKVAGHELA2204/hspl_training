@@ -1,0 +1,46 @@
+<odoo>
+    <!-- Tree View  for Doctor Timeing information-->
+    <record id="hospital_doctor_timeing_tree_view" model="ir.ui.view">
+        <field name="name">hospital.doctor.timeing.tree.view</field>
+        <field name="model">hospital.doctor.timeing</field>
+        <field name="arch" type="xml">
+            <tree string="Practice Information">
+                <field name="doctor_id"/>
+                <field name="from_time" widget="float_time"/>
+                <field name="to_time" widget="float_time"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="doctor_timeing_form_view" model="ir.ui.view">
+        <field name="name">hospital.doctor.timeing.form.view</field>
+        <field name="model">hospital.doctor.timeing</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h2><field name="doctor_id" placeholder="Name"/></h2>
+                    <group string="Doctor Timeing Information">
+                        <group>
+                            <field name="doctor_ids" widget="many2many_tags"/>
+                            <field name="from_time" widget="float_time"/>
+                            <field name="to_time" widget="float_time"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_doctor_timeing" model="ir.actions.act_window">
+        <field name="name">Doctor Timeing</field>
+        <field name="res_model">hospital.doctor.timeing</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id = "hospital_doctor_timeing_menu"
+              name = "Doctor Timeing" action="action_doctor_timeing"
+              parent = "hospital_root_menu"
+              sequence="5"/>
+    <!-- End Menu -->
+</odoo>

@@ -23,7 +23,7 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <field name="image" widget="image" class="oe_avtar"/>
+                    <field name="image" widget="image"/>
                     <h2><field name="patient_name" placeholder="Name"/></h2>
                     <group string="Appointment Information">
                         <group>

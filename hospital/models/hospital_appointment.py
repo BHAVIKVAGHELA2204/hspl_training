@@ -22,3 +22,4 @@ class HospitalAppointment(models.Model):
     m_status = fields.Selection(related="patient_name.m_status", string='Marital status', default='unmarried',
                                 store="True")
     image = fields.Binary(related="patient_name.image", string="Image", store="True")
+    test_color = fields.Char(string="test color")
