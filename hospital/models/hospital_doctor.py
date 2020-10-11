@@ -9,6 +9,8 @@ class HospitalDoctor(models.Model):
     age = fields.Integer(string="Age")
     blood_group = fields.Char(string="Blood Group")
     address = fields.Text(string="Address")
+    from_time = fields.Integer(string="From Time")
+    to_time = fields.Integer(strinng="To Time")
     gender = fields.Selection([
         ('male', 'Male'),
         ('female', 'Female'),

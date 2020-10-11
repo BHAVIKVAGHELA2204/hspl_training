@@ -23,3 +23,5 @@ class HospitalAppointment(models.Model):
                                 store="True")
     image = fields.Binary(related="patient_name.image", string="Image", store="True")
     test_color = fields.Char(string="test color")
+    from_time = fields.Integer(related="doctor_id.from_time", string="From Date", store="True")
+    to_time = fields.Integer(related="doctor_id.to_time", string="To time", store="True")

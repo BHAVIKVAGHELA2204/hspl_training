@@ -31,13 +31,15 @@
                             <field name="gender"/>
                             <field name="blood_group"/>
                             <field name="address"/>
+                            <field name="m_status" />
                         </group>
                         <group>
                             <field name="date_of_appointment" />
-                            <field name="m_status" />
                             <field name="dob"/>
                             <field name="contact"/>
                             <field name="doctor_id"/>
+                            <field name="from_time" widget="float_time"/>
+                            <field name="to_time" widget="float_time"/>
                         </group>
                     </group>
                 </sheet>
