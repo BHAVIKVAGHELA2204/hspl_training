@@ -1,0 +1,59 @@
+<odoo>
+    <!-- Tree View  for laboratory information-->
+    <record id="hospital_laboratory_tree_view" model="ir.ui.view">
+        <field name="name">hospital.laboratory.tree.view</field>
+        <field name="model">hospital.laboratory</field>
+        <field name="arch" type="xml">
+            <tree string="Laboratory Information">
+                <field name="patient_id"/>
+                <field name="doctor"/>
+                <field name="dob"/>
+                <field name="date_of_appointment"/>
+                <field name="illness"/>
+                <field name="blood_group"/>
+                <field name="report"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Form view -->
+    <record id="laboratory_form_view" model="ir.ui.view">
+        <field name="name">hospital.laboratory.form.view</field>
+        <field name="model">hospital.laboratory</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image"/>
+                    <group string="Laboratory Information">
+                        <group>
+                            <field name="patient_id"/>
+                            <field name="age"/>
+                            <field name="dob"/>
+                            <field name="address"/>
+                            <field name="gender"/>
+                            <field name="m_status"/>
+                        </group>
+                        <group>
+                            <field name="contact"/>
+                            <field name="blood_group"/>
+                            <field name="date_of_appointment"/>
+                            <field name="doctor"/>
+                            <field name="illness"/>
+                            <field name="report"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_laboratory" model="ir.actions.act_window">
+        <field name="name">Laboratory</field>
+        <field name="res_model">hospital.laboratory</field>
+        <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+
+    <menuitem id = "hospital_laboratory_menu"
+              name = "Laboratory" action="action_laboratory"
+              parent = "hospital_root_menu"
+              sequence="7"/>
+    <!-- End Menu -->
+</odoo>

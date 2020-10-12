@@ -1,8 +1,8 @@
-from odoo import fields, models
+from odoo import fields, models, api, _
+
 
 class HospitalPatient(models.Model):
     _name = "hospital.patient"
-    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = "Patient Table"
 
     name = fields.Char(string="Name", required=True)
@@ -21,4 +21,15 @@ class HospitalPatient(models.Model):
         ('unmarried', 'Unmarried'),
     ], string='Marital status', default='unmarried')
     image = fields.Binary(string="Image")
+    state = fields.Selection([
+        ('new', 'New'),
+        ('old', 'Old'),
+    ], string='Status', copy=False, default='new')
 
+    def act_move_old(self):
+        for rec in self:
+            rec.state = 'old'
+
+    def act_move_new(self):
+        for rec in self:
+            rec.state = 'new'

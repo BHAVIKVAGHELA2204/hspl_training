@@ -4,3 +4,4 @@ access_hospital_doctor,access_hospital_doctor,model_hospital_doctor,base.group_u
 access_hospital_appointment,access_hospital_appointment,model_hospital_appointment,base.group_user,1,1,1,1
 access_hospital_practice,access_hospital_practice,model_hospital_practice,base.group_user,1,1,1,1
 access_hospital_doctor_timeing,access_hospital_doctor_timeing,model_hospital_doctor_timeing,base.group_user,1,1,1,1
+access_hospital_laboratory,access_hospital_laboratory,model_hospital_laboratory,base.group_user,1,1,1,1

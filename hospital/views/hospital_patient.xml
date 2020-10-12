@@ -15,11 +15,16 @@
         </field>
     </record>
     <!-- Form view -->
-    <record id="student_form_view" model="ir.ui.view">
+    <record id="hospital_patient_form_view" model="ir.ui.view">
         <field name="name">hospital.patient.form.view</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button name="act_move_new" string="Move New" states="old" type="object"/>
+                    <button name="act_move_old" string="Move Old" states="new" type="object"/>
+                    <field name="state" widget="statusbar" clickable="1" statusbar_visible="new,old"/>
+                </header>
                 <sheet>
                     <field name="image" widget="image" class="oe_avtar"/>
                     <h2><field name="name" placeholder="Name"/></h2>

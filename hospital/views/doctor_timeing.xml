@@ -21,9 +21,13 @@
                     <h2><field name="doctor_id" placeholder="Name"/></h2>
                     <group string="Doctor Timeing Information">
                         <group>
-                            <field name="doctor_ids" widget="many2many_tags"/>
-                            <field name="from_time" widget="float_time"/>
-                            <field name="to_time" widget="float_time"/>
+                            <field name="doctor_ids"/>
+                            <label for="date_begin" string="Date"/>
+                            <div class="o_row">
+                                <field name="from_time" class="oe_inline" widget="float_time"/>
+                                <i class="fa fa-long-arrow-right mx-2" aria-label="Arrow icon" title="Arrow"/>
+                                <field name="to_time" class="oe_inline" widget="float_time"/>
+                            </div>
                         </group>
                     </group>
                 </sheet>

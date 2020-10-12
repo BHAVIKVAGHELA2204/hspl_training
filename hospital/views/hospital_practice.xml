@@ -17,7 +17,7 @@
         </field>
     </record>
     <!-- Form view -->
-    <record id="student_form_view" model="ir.ui.view">
+    <record id="hospital_practice_form_view" model="ir.ui.view">
         <field name="name">hospital.practice.form.view</field>
         <field name="model">hospital.practice</field>
         <field name="arch" type="xml">
