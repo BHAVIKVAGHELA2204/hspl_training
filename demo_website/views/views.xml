@@ -1,0 +1,46 @@
+<odoo>
+    <record id="website_course_search" model="ir.ui.view">
+        <field name="name">demo_website courses: search</field>
+        <field name="model">demo_website.courses</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="teacher_id"/>
+            </search>
+        </field>
+    </record>
+    <record id="website_course_list" model="ir.ui.view">
+        <field name="name">demo_website courses: list</field>
+        <field name="model">demo_website.courses</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="name"/>
+                <field name="teacher_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="demo_website_course_form" model="ir.ui.view">
+        <field name="name">website courses: form</field>
+        <field name="model">demo_website.courses</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <label for="name"/>
+                    <field name="name"/>
+                    <label for="teacher_id"/>
+                    <field name="teacher_id"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_academy_courses" model="ir.actions.act_window">
+        <field name="name">website teachers</field>
+        <field name="res_model">demo_website.courses</field>
+    </record>
+    <menuitem sequence="0" id="menu_website" name="Test menu"/>
+    <menuitem id="menu_website_content" parent="menu_website"
+              name="website Content"/>
+    <menuitem id="menu_website_content_teachers"
+              parent="menu_website_content"
+              action="action_academy_courses"/>
+</odoo>

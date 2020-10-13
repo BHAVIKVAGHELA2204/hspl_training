@@ -1,0 +1,86 @@
+<odoo>
+    <template id="index">
+        <title>Academy</title>
+        <t t-foreach="teachers" t-as="teacher">
+            <p>
+                <t t-esc="teacher"/>
+            </p>
+        </t>
+    </template>
+    <template id="record">
+        <title>Academy</title>
+        <t t-foreach="teachers" t-as="teacher">
+            <p>
+                <t t-esc="teacher.id"/>
+                <t t-esc="teacher.name"/>
+            </p>
+        </t>
+    </template>
+    <template id="web_record">
+        <t t-call="website.layout">
+            <t t-set="title">Demo</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <t t-foreach="teachers" t-as="teacher">
+                        <p>
+                            <t t-esc="teacher.id"/>
+                            <t t-esc="teacher.name"/>
+                            <p>Last modified:
+                                <i t-field="person.write_date"/>
+                            </p>
+                            <div t-field="person.biography"/>
+                        </p>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="biography">
+        <t t-call="website.layout">
+            <t t-set="title">Website</t>
+            <div class="oe_structure"/>
+            <div class="oe_structure">
+                <div class="container">
+                    <h3 t-field="person.name"/>
+                    <div t-esc="person.id"/>
+                    <p>Last modified:
+                        <i t-field="person.write_date"/>
+                    </p>
+                </div>
+            </div>
+            <div class="oe_structure">
+                <div class="container">
+                    <t t-foreach="teachers" t-as="teacher">
+                        <p>
+                            <a t-attf-href="/demo_website/{{ slug(teacher) }}">
+                                <t t-esc="teacher.name"/>
+                            </a>
+                        </p>
+                    </t>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+            <div class="oe_structure">
+                <div class="container">
+                    <h3>
+                        <t t-esc="person.id"/>
+                    </h3>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+        </t>
+    </template>
+    <template id="test">
+        <div class="oe_structure">
+            <div class="container">
+                <p>name:
+                    <h3 t-field="teacher.name"/>
+                </p>
+                <p>Last modified:
+                    <i t-field="teacher.write_date"/>
+                </p>
+                <div t-field="teacher.test"/>
+            </div>
+        </div>
+    </template>
+</odoo>
