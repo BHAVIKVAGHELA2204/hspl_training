@@ -5,5 +5,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="hospital" />
+    <orderEntry type="module" module-name="sale" />
+    <orderEntry type="module" module-name="sale" />
+    <orderEntry type="module" module-name="ecommerce" />
+    <orderEntry type="module" module-name="13.0" />
+    <orderEntry type="module" module-name="trainee_student" />
   </component>
 </module>

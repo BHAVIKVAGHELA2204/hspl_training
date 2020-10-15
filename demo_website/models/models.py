@@ -6,3 +6,4 @@ class Teachers(models.Model):
 
     name = fields.Char()
     biography = fields.Html()
+    course_ids = fields.One2many('demo_website.courses', 'teacher_id', string="Courses")

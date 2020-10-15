@@ -1,0 +1,75 @@
+<odoo>
+    <data>
+        <!-- explicit list view of project -->
+        <record model="ir.ui.view" id="student_tree_view">
+            <field name="name">student.tree.view</field>
+            <field name="model">student.student</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="roll_no"/>
+                    <field name="std_class"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="appointment_form_view" model="ir.ui.view">
+            <field name="name">student.form.view</field>
+            <field name="model">student.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group string="Appointment Information">
+                            <group>
+                                <field name="name"/>
+                                <field name="roll_no"/>
+                            </group>
+                            <group>
+                                <field name="std_class"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_student_filter" model="ir.ui.view">
+            <field name="name">student.search.view</field>
+            <field name="model">student.student</field>
+            <!--<field name="priority" eval="15"/>-->
+            <field name="arch" type="xml">
+                <search string="Search Students">
+                    <field string="standerd" name="std_class" filter_domain="[('std_class', 'ilike', self)]"/>
+                    <filter string="10th class" domain="[('std_class', '=', '10 th')]" name="std_class"/>
+                    <group expand="0" string="Group By">
+                        <field string="class" name="std_class" domain="[]" context="{'group_by': 'std_class'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_student" model="ir.actions.act_window">
+            <field name="name">Student Info</field>
+            <field name="res_model">student.student</field>
+            <field name="view_mode">tree,form,kanban,graph</field>
+            <field name="search_view_id" ref="view_student_filter"/>
+        </record>
+        <menuitem id="trainee_student_root_menu"
+                  name="Student"
+                  web_icon="trainee_student/static/description/school.png"
+                  sequence="1"/>
+        <menuitem id="main_menu_student"
+                      name="Student Detailes"
+                      parent="trainee_student_root_menu"
+                      sequence="1"/>
+        <menuitem id="menu_student_info"
+                  name="Student Info" action="action_student"
+                  parent="main_menu_student"
+                  sequence="1"/>
+        <menuitem id="main_menu_subject"
+                      name="Master Data"
+                      parent="trainee_student_root_menu"
+                      sequence="2"/>
+    </data>
+</odoo>

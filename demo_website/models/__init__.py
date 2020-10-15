@@ -2,3 +2,4 @@
 
 from . import models
 from . import courses
+from . import product
