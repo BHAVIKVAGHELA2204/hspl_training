@@ -9,9 +9,10 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
+        'views/student_info.xml',
         'views/subject.xml',
         'views/student_subject_lines.xml',
-        'views/student_info.xml',
+        'views/student_book.xml',
     ],
     'demo': [],
     'installable': True,

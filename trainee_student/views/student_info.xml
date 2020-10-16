@@ -9,26 +9,70 @@
                     <field name="name"/>
                     <field name="roll_no"/>
                     <field name="std_class"/>
+                    <field name="res_total"/>
                 </tree>
             </field>
         </record>
 
         <!-- Form view -->
-        <record id="appointment_form_view" model="ir.ui.view">
+        <record id="student_form_view" model="ir.ui.view">
             <field name="name">student.form.view</field>
             <field name="model">student.student</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <group string="Appointment Information">
+                        <group string="Student Information">
                             <group>
                                 <field name="name"/>
                                 <field name="roll_no"/>
                             </group>
                             <group>
                                 <field name="std_class"/>
+                                <field name="marks1"/>
+                                <field name="marks2"/>
+                                <field name="res_total"/>
+                                <field name="res_per"/>
                             </group>
                         </group>
+                        <notebook>
+                            <page name="student_subject_details" string="Subject Details">
+                                <field name="subject_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="subject_id"/>
+                                        <field name="subject_code"/>
+                                        <field name="author" force_save="1"/>
+                                        <field name="student_id" invisible="1"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="subject_id"/>
+                                                <field name="subject_code"/>
+                                                <field name="student_id" invisible="1"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="student_book_details" string="Book Details">
+                                <field name="book_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="book_id"/>
+                                        <field name="book_author"/>
+                                        <field name="student_id" invisible="1"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="book_id"/>
+                                                <field name="book_author"/>
+                                                <field name="student_id" invisible="1"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -49,27 +93,65 @@
             </field>
         </record>
 
+        <record id="student_calendar" model="ir.ui.view">
+            <field name="name">student.calendar</field>
+            <field name="model">student.student</field>
+            <field name="arch" type="xml">
+                <calendar string="Students Admission Date" color="roll_no" date_start="admission_date" hide_time="true" event_limit="5">
+                    <field name="name"/>
+                    <field name="roll_no"/>
+                </calendar>
+            </field>
+        </record>
+
+        <record id="student_pivot" model="ir.ui.view">
+            <field name="name">student.pivot</field>
+            <field name="model">student.student</field>
+            <field name="arch" type="xml">
+                <pivot string="Student">
+                    <field name="name"/>
+                    <field name="roll_no"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="student_chart_view" model="ir.ui.view">
+            <field name="name">student.chart</field>
+            <field name="model">student.student</field>
+            <field name="arch" type="xml">
+                <graph string="Student Graph">
+                    <field name="name"/>
+                    <field name="roll_no" type="pie"/>
+                </graph>
+            </field>
+        </record>
+
         <record id="action_student" model="ir.actions.act_window">
             <field name="name">Student Info</field>
             <field name="res_model">student.student</field>
-            <field name="view_mode">tree,form,kanban,graph</field>
+            <field name="view_mode">tree,form,calendar,graph,pivot</field>
             <field name="search_view_id" ref="view_student_filter"/>
         </record>
+
         <menuitem id="trainee_student_root_menu"
                   name="Student"
                   web_icon="trainee_student/static/description/school.png"
                   sequence="1"/>
+
         <menuitem id="main_menu_student"
-                      name="Student Detailes"
-                      parent="trainee_student_root_menu"
-                      sequence="1"/>
+                  name="Student Detailes"
+                  parent="trainee_student_root_menu"
+                  sequence="1"/>
+
         <menuitem id="menu_student_info"
-                  name="Student Info" action="action_student"
+                  name="Student Info"
+                  action="action_student"
                   parent="main_menu_student"
                   sequence="1"/>
+
         <menuitem id="main_menu_subject"
-                      name="Master Data"
-                      parent="trainee_student_root_menu"
-                      sequence="2"/>
+                  name="Master Data"
+                  parent="trainee_student_root_menu"
+                  sequence="2"/>
     </data>
 </odoo>

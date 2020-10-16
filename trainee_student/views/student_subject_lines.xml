@@ -8,11 +8,12 @@
                 <tree>
                     <field name="subject_id"/>
                     <field name="student_id"/>
+
                 </tree>
             </field>
         </record>
         <!-- Form view -->
-        <record id="appointment_form_view" model="ir.ui.view">
+        <record id="student_subject_lines_form_view" model="ir.ui.view">
             <field name="name">student_lines.form.view</field>
             <field name="model">student.subject.lines</field>
             <field name="arch" type="xml">
@@ -34,7 +35,7 @@
         <record id="action_student_subject_lines" model="ir.actions.act_window">
             <field name="name">Student Subject Lines</field>
             <field name="res_model">student.subject.lines</field>
-            <field name="view_mode">tree,form,kanban,graph</field>
+            <field name="view_mode">tree,form</field>
         </record>
 
         <menuitem id="menu_student_subject_lines"

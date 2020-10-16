@@ -1,5 +1,6 @@
 from odoo import fields, models
 
+
 class Subject(models.Model):
     _name = "student.subject"
     _description = "subject Table"
