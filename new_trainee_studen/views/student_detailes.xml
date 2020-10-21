@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="student_detailes_tree_view" model="ir.ui.view">
+            <field name="name">student.tree.view</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="trainee_student.student_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='roll_no']" position="after">
+                    <field name="extra_marks_show"/>
+                    <field name="marks3"/>
+                    <field name="marks4"/>
+                </xpath>
+            </field>
+        </record>
+        <!-- Form view -->
+        <record id="student_detailes_form_inherited_view" model="ir.ui.view">
+            <field name="name">student.form.inherited.view</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="trainee_student.student_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='roll_no']" position="after">
+                    <field name="extra_marks_show"/>
+                    <field name="marks3" attrs="{'invisible': [('extra_marks_show','=', False)]}"/>
+                    <field name="marks4" attrs="{'required': [('extra_marks_show','=', True)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="trainee_student.action_student" model="ir.actions.act_window">
+            <field name="name">New Student Info</field>
+            <field name="res_model">student.student</field>
+            <field name="view_mode">calendar,graph,tree,form,pivot</field>
+            <field name="search_view_id" ref="trainee_student.view_student_filter"/>
+        </record>
+
+        <menuitem id="trainee_student.menu_student_info"
+                  name="New Student Info"
+                  action="trainee_student.action_student"
+                  parent="trainee_student.main_menu_student"
+                  sequence="1"/>
+    </data>
+</odoo>

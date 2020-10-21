@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record id="student_detailes_inherit_tree_view" model="ir.ui.view">
+            <field name="name">student.detailes.inherit.tree.view</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="trainee_student.student_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='roll_no']" position="after">
+                    <field name="extra_marks_show"/>
+                    <field name="marks3"/>
+                    <field name="marks4"/>
+                    <field name="subject_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="student_detailes_inherit_form_view" model="ir.ui.view">
+            <field name="name">student.detailes.inherit.form.view</field>
+            <field name="model">student.student</field>
+            <field name="inherit_id" ref="trainee_student.student_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='roll_no']" position="after">
+                    <field name="extra_marks_show"/>
+                    <field name="marks3" attrs="{'invisible': [('extra_marks_show', '=', False)]}"/>
+                    <field name="marks4" attrs="{'required': [('extra_marks_show', '=', True)]}"/>
+                    <field name="subject_id"/>
+                    <field name="selected_value"/>
+                </xpath>
+            </field>
+        </record>
+
+        <menuitem id="trainee_student.menu_student_info"
+                  name="Student Info New"
+                  action="trainee_student.action_student"
+                  parent="trainee_student.main_menu_student"
+                  sequence="1"/>
+    </data>
+</odoo>

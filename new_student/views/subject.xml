@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="subject_subject_tree_view" model="ir.ui.view">
+            <field name="name">subject.subject.tree.view</field>
+            <field name="model">subject.subject</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_subject_subject" model="ir.actions.act_window">
+            <field name="name">Student Info</field>
+            <field name="res_model">subject.subject</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="main_menu_subject"
+                  name="Student Subject"
+                  action="action_subject_subject"
+                  parent="trainee_student.trainee_student_root_menu"
+                  sequence="4"/>
+
+    </data>
+</odoo>
