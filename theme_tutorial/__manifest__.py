@@ -5,11 +5,15 @@
     'author': 'Bhavik vaghela',
     'category': 'Theme/Creative',
 
-    'depends': ['website', 'website_theme_install', 'website_blog', 'sale'],
+    'depends': ['website', 'website_theme_install', 'website_blog', 'sale', 'portal'],
 
     'data': [
+        'views/assets.xml',
+        'views/home.xml',
         'views/layout.xml',
-        'views/pages.xml',
+        'views/services.xml',
+        'views/careers.xml',
+        'views/about.xml',
     ],
     'installable': True,
     'application': True,
