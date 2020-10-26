@@ -14,8 +14,11 @@
         'views/services.xml',
         'views/careers.xml',
         'views/about.xml',
+        'views/profile.xml',
+        'views/snippets.xml',
+        'views/options.xml',
     ],
     'installable': True,
     'application': True,
-    'auto_install': False
+    'auto_install': False,
 }

@@ -1,0 +1,236 @@
+<odoo>
+    <record id="profile_page" model="website.page">
+        <field name="name">Profile page</field>
+        <field name="website_published">True</field>
+        <field name="url">/profile</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_tutorial.profile_page</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_tutorial.careers_page_template">
+                <t t-call="website.layout">
+                    <div id="wrap" class="">
+                        <div class="container">
+                            <div class="oe_structure">
+                                <section class="s_text_block pt32" data-name="Text block">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12 pt32 pb32">
+                                                <p class="lead">A great way to catch your reader's attention is to tell
+                                                    a story.<br/>Everything you consider writing can be told as a story.
+                                                </p>
+                                                <p class="o_default_snippet_text">
+                                                    <b class="o_default_snippet_text">Great stories have personality.
+                                                    </b>
+                                                    Consider telling a great story that provides personality. Writing a
+                                                    story with personality for potential clients will assists with
+                                                    making a relationship connection. This shows up in small quirks like
+                                                    word choices or phrases. Write from your point of view, not from
+                                                    someone else's experience.
+                                                </p>
+                                                <p>
+                                                    <b>Great stories are for everyone even when only written for just
+                                                        one person.
+                                                    </b>
+                                                    If you try to write with a wide general audience in mind, your story
+                                                    will ring false and be bland. No one will be interested. Write for
+                                                    one person. If it’s genuine for the one, it’s genuine for the rest
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section data-name="Title">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+                                                <h1 class="s_title_lines">
+                                                    <span style="font-size: 52px;">Job Title 1</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="s_faq_collapse pb32 pt0" data-name="Accordion">
+                                    <div class="container">
+                                        <div class="row s_col_no_bgcolor">
+                                            <div class="col-lg-12 pb16 pt16">
+                                                <div id="myCollapse" class="accordion" role="tablist">
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false" class="card-header collapsed"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542519"
+                                                           data-original-title="" title=""
+                                                           aria-describedby="tooltip164979">Terms of service
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542519" style="">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">These terms
+                                                                    of service ("Terms", "Agreement") are an agreement
+                                                                    between the website ("Website operator", "us", "we"
+                                                                    or "our") and you ("User", "you" or "your"). This
+                                                                    Agreement sets forth the general terms and
+                                                                    conditions of your use of this website and any of
+                                                                    its products or services (collectively, "Website" or
+                                                                    "Services").
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false" class="card-header collapsed"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542520"
+                                                           data-original-title="" title=""
+                                                           aria-describedby="tooltip303682">Links to other Websites
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542520" style="">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">Although
+                                                                    this Website may be linked to other websites, we are
+                                                                    not, directly or indirectly, implying any approval,
+                                                                    association, sponsorship, endorsement, or
+                                                                    affiliation with any linked website, unless
+                                                                    specifically stated herein.
+                                                                </p>
+                                                                <p class="card-text o_default_snippet_text">You should
+                                                                    carefully review the legal statements and other
+                                                                    conditions of use of any website which you access
+                                                                    through a link from this Website. Your linking to
+                                                                    any other off-site pages or other websites is at
+                                                                    your own risk.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false"
+                                                           class="card-header collapsed o_default_snippet_text"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542521">Use of Cookies
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542521">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">Website may
+                                                                    use cookies to personalize and facilitate maximum
+                                                                    navigation of the User by this site. The User may
+                                                                    configure his / her browser to notify and reject the
+                                                                    installation of the cookies sent by us.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section data-name="Title">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+                                                <h1 class="s_title_lines">
+                                                    <span style="font-size: 52px;">Job Title 2</span>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="s_faq_collapse pb32 pt0" data-name="Accordion">
+                                    <div class="container">
+                                        <div class="row s_col_no_bgcolor">
+                                            <div class="col-lg-12 pb16 pt16">
+                                                <div id="myCollapse" class="accordion" role="tablist">
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false" class="card-header collapsed"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542519"
+                                                           data-original-title="" title=""
+                                                           aria-describedby="tooltip164979">Terms of service
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542519" style="">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">These terms
+                                                                    of service ("Terms", "Agreement") are an agreement
+                                                                    between the website ("Website operator", "us", "we"
+                                                                    or "our") and you ("User", "you" or "your"). This
+                                                                    Agreement sets forth the general terms and
+                                                                    conditions of your use of this website and any of
+                                                                    its products or services (collectively, "Website" or
+                                                                    "Services").
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false" class="card-header collapsed"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542520"
+                                                           data-original-title="" title=""
+                                                           aria-describedby="tooltip303682">Links to other Websites
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542520" style="">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">Although
+                                                                    this Website may be linked to other websites, we are
+                                                                    not, directly or indirectly, implying any approval,
+                                                                    association, sponsorship, endorsement, or
+                                                                    affiliation with any linked website, unless
+                                                                    specifically stated herein.
+                                                                </p>
+                                                                <p class="card-text o_default_snippet_text">You should
+                                                                    carefully review the legal statements and other
+                                                                    conditions of use of any website which you access
+                                                                    through a link from this Website. Your linking to
+                                                                    any other off-site pages or other websites is at
+                                                                    your own risk.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-white card">
+                                                        <a href="#" role="tab" data-toggle="collapse"
+                                                           aria-expanded="false"
+                                                           class="card-header collapsed o_default_snippet_text"
+                                                           data-parent="#myCollapse"
+                                                           data-target="#myCollapseTab1603368542521">Use of Cookies
+                                                        </a>
+                                                        <div class="collapse" role="tabpanel"
+                                                             id="myCollapseTab1603368542521">
+                                                            <div class="card-body">
+                                                                <p class="card-text o_default_snippet_text">Website may
+                                                                    use cookies to personalize and facilitate maximum
+                                                                    navigation of the User by this site. The User may
+                                                                    configure his / her browser to notify and reject the
+                                                                    installation of the cookies sent by us.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <template id="my_profile_link" name="Link to profile" inherit_id="portal.frontend_layout">
+        <xpath expr="//a[@id='o_logout']" position="after">
+            <a href="/profile" role="menuitem" class="dropdown-item">My profile</a>
+        </xpath>
+    </template>
+</odoo>

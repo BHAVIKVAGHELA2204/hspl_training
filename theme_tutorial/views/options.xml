@@ -1,0 +1,19 @@
+<odoo>
+    <template id="snippet_testimonial_opt" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-selector=".snippet_testimonial">
+                <we-collapse-area>
+                    <we-toggler>
+                        <i class="fa fa-fw fa-magic"/>
+                        Your Option
+                    </we-toggler>
+                    <we-collapse>
+                        <we-button data-toggle-class="opt_shadow">Shadow Images</we-button>
+                        <we-button data-toggle-class="opt_grey_bg">Grey Bg</we-button>
+                        <we-button data-toggle-class="">None</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+</odoo>

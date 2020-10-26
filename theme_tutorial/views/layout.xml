@@ -7,14 +7,14 @@
         </xpath>
 
         <!-- Add an element after the top menu  -->
-        <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
+        <!--<xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
             <div class="container">
                 <div class="alert alert-info mt16" role="alert">
                     <strong>Welcome</strong>
                     in our website!
                 </div>
             </div>
-        </xpath>
+        </xpath>-->
     </template>
 
     <!--<template id="new_template" inherit_id="website.template">
