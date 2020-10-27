@@ -5,7 +5,7 @@
     'author': 'Bhavik vaghela',
     'category': 'Theme/Creative',
 
-    'depends': ['website', 'website_theme_install', 'website_blog', 'sale', 'portal'],
+    'depends': ['website', 'website_theme_install', 'website_blog', 'sale', 'portal', 'web_editor'],
 
     'data': [
         'views/assets.xml',

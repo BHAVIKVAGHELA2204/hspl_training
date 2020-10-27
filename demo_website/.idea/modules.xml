@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/demo_website.iml" filepath="$PROJECT_DIR$/.idea/demo_website.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ecommerce/.idea/ecommerce.iml" filepath="$PROJECT_DIR$/../ecommerce/.idea/ecommerce.iml" />
       <module fileurl="file://$PROJECT_DIR$/../hospital/.idea/hospital.iml" filepath="$PROJECT_DIR$/../hospital/.idea/hospital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my_modules/.idea/my_modules.iml" filepath="$PROJECT_DIR$/../my_modules/.idea/my_modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/../new_student/.idea/new_student.iml" filepath="$PROJECT_DIR$/../new_student/.idea/new_student.iml" />
       <module fileurl="file://$PROJECT_DIR$/../new_trainee_studen/.idea/new_trainee_studen.iml" filepath="$PROJECT_DIR$/../new_trainee_studen/.idea/new_trainee_studen.iml" />
       <module fileurl="file://$PROJECT_DIR$/../website_sale/.idea/sale.iml" filepath="$PROJECT_DIR$/../website_sale/.idea/sale.iml" />

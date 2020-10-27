@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="new_trainee_studen" />
     <orderEntry type="module" module-name="new_student" />
     <orderEntry type="module" module-name="theme_tutorial" />
+    <orderEntry type="module" module-name="my_modules" />
   </component>
 </module>
