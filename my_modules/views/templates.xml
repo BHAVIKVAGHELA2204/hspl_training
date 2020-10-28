@@ -57,6 +57,9 @@
             <div class="oe_structure">
                 <div class="container">
                     <h3 t-field="teachers.name"/>
+                    <p>Last modified Simple: <i t-field="teachers.write_date"/></p>
+                    <p>Last modified Long: <i t-field="teachers.write_date" t-options='{"format": "long"}'/></p>
+                    <p>Last modified Relative: <i t-field="teachers.write_date" t-options='{"widget": "relative"}'/></p>
                     <div t-field="teachers.biography"/>
                 </div>
             </div>
