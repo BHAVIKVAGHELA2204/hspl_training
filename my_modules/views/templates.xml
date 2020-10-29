@@ -10,28 +10,25 @@
     </template>-->
     <template id="index">
         <t t-call="website.layout">
-            <t t-set="title">Academy</t>
-            <div class="oe_structure">
-                <div class="container">
-                    <t t-foreach="teachers" t-as="teacher">
-                        <p>
-                            <t t-esc="teacher.id"/>
-                            <t t-esc="teacher.name"/>
-                        </p>
-                    </t>
-                </div>
+            <div id="wrap" class="oe_structure oe_empty"/>
+            <div class="container">
+                <span>Academy</span>
+                <p t-foreach="teachers" t-as="teacher">
+                    <span t-esc="teacher.id"/>
+                    <span t-esc="teacher.name"/>
+                </p>
             </div>
         </t>
     </template>
-    <template id="biography">
+    <!--<template id="biography">
         <t t-call="website.layout">
             <t t-set="title">Academy</t>
             <div class="oe_structure"/>
-            <!--<div class="oe_structure">
+            &lt;!&ndash;<div class="oe_structure">
                 <div class="container">
                     <p><t t-esc="person.id"/> <t t-esc="person.name"/></p>
                 </div>
-            </div>-->
+            </div>&ndash;&gt;
             <div class="oe_structure"/>
             <div class="oe_structure">
                 <div class="container">
@@ -57,14 +54,48 @@
             <div class="oe_structure">
                 <div class="container">
                     <h3 t-field="teachers.name"/>
-                    <p>Last modified Simple: <i t-field="teachers.write_date"/></p>
-                    <p>Last modified Long: <i t-field="teachers.write_date" t-options='{"format": "long"}'/></p>
-                    <p>Last modified Relative: <i t-field="teachers.write_date" t-options='{"widget": "relative"}'/></p>
+                    <p>Last modified Simple:
+                        <i t-field="teachers.write_date"/>
+                    </p>
+                    <p>Last modified Long:
+                        <i t-field="teachers.write_date" t-options='{"format": "long"}'/>
+                    </p>
+                    <p>Last modified Relative:
+                        <i t-field="teachers.write_date" t-options='{"widget": "relative"}'/>
+                    </p>
                     <div t-field="teachers.biography"/>
                 </div>
             </div>
         </t>
     </template>
+
+    <template id="product_hide_no_price" inherit_id="website_sale.products_item">
+        <xpath expr="//div[hasclass('product_price')]/span[1]" position="replace">
+            <t t-if="product.price &gt; 0">
+                <b>
+                    <span itemprop="price" t-esc="combination_info['price']"/>
+                </b>
+            </t>
+            <t t-else="">
+                <span itemprop="price" t-esc="combination_info['price']"/>
+            </t>
+            <div>
+                <t t-set="existing_variable" t-value="False"/>
+                &lt;!&ndash; existing_variable now False &ndash;&gt;
+
+                <p t-foreach="[1, 2, 3]" t-as="i">
+                    <t t-set="existing_variable" t-value="True"/>
+                    <t t-set="new_variable" t-value="True"/>
+                    <p t-esc="existing_variable"/>
+                    <p t-esc="new_variable"/>
+                </p>
+            </div>
+        </xpath>
+
+    </template>-->
+    <record id="website_sale.products_categories" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
     <!--<template id="index">
         <title>Academy</title>
         <t t-foreach="teachers" t-as="teacher">

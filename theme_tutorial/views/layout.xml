@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <template id="custom_header" inherit_id="website.layout" name="Custom Header">
-        <!-- Assign an id  -->
+    <!--<template id="custom_header" inherit_id="website.layout" name="Custom Header">
+        &lt;!&ndash; Assign an id  &ndash;&gt;
         <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
             <attribute name="id">my_header_x</attribute>
         </xpath>
 
-        <!-- Add an element after the top menu  -->
-        <!--<xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
+        &lt;!&ndash; Add an element after the top menu  &ndash;&gt;
+        &lt;!&ndash;<xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
             <div class="container">
                 <div class="alert alert-info mt16" role="alert">
                     <strong>Welcome</strong>
                     in our website!
                 </div>
             </div>
-        </xpath>-->
-    </template>
+        </xpath>&ndash;&gt;
+    </template>-->
 
     <!--<template id="new_template" inherit_id="website.template">
         <xpath expr="//div[hasclass('o_homepage_editor_welcome_message')]" position="replace">

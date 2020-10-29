@@ -5,12 +5,13 @@
     'author': 'Bhavik vaghela',
     'category': 'Theme/Creative',
 
-    'depends': ['website'],
+    'depends': ['website', 'website_sale'],
 
     'data': [
         'security/ir.model.access.csv',
-        'views/templates.xml',
+        'data/data_view.xml',
         'views/demo.xml',
+        'views/templates.xml',
         'views/views.xml',
     ],
     'installable': True,
