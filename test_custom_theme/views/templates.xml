@@ -1,0 +1,86 @@
+<odoo>
+    <data>
+        <template id="custom_frontend_layout" name="Main Frontend Layout" inherit_id="portal.frontend_layout">
+            <xpath expr="//div[@id='wrapwrap']/header/nav/div[hasclass('container')]" position="replace">
+                <div class="container">
+                    <div class="col-md-4">
+                        <a href="/" class="navbar-brand logo">
+                            <span data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image"
+                                  data-oe-expression="website.logo" role="img" aria-label="Logo of My Website"
+                                  title="My Website">
+                                <a class="text-muted" href="#">Subscribe</a>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="/" class="navbar-brand logo">
+                            <span data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image"
+                                  data-oe-expression="website.logo" role="img" aria-label="Logo of My Website"
+                                  title="My Website">
+                                <img src="/web/image/website/1/logo/My%20Website?unique=1ecbf59"
+                                     class="img img-fluid"
+                                     alt="My Website"/>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <div class="btn-group">
+                            <div class="custom_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="mx-3">
+                                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                    <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                                </svg>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="top_menu_collapse">
+                                <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
+                                <ul class="nav navbar-nav ml-auto text-right custom_btn" id="custom_top_menu">
+                                    <li class="nav-item divider" t-ignore="true" t-if="not user_id._is_public()"/>
+                                    <li class="nav-item dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                        <a href="#" class="nav-link btn_nav_link custom_lilo dropdown-toggle" data-toggle="dropdown">
+                                            <b>
+                                                <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                            </b>
+                                        </a>
+                                        <div class="dropdown-menu js_usermenu" role="menu">
+                                            <a href="/my/home" role="menuitem" class="dropdown-item">My Account</a>
+                                            <a id="o_logout" class="dropdown-item"
+                                               t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item divider" groups="base.group_public"/>
+                                    <li groups="base.group_public" class="nav-item">
+                                        <a t-attf-href="/web/login" class="nav-link custom_lilo">
+                                            <b>Sign in</b>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
+                <nav class="navbar navbar-expand-md navbar-light bg-light custom_nav">
+                    <div class="container">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#custom_top_menu_collapse">
+                            <span class="navbar-toggler-icon"/>
+                        </button>
+                        <div class="collapse navbar-collapse custom_nav_center" id="custom_top_menu_collapse">
+                            <ul class="nav navbar-nav ml-auto" id="top_menu">
+                                <li class="nav-item"><a href="/" class="nav-link custom_nav_link">Home</a></li>
+                                <li class="nav-item"><a href="/shop" class="nav-link custom_nav_link">Shop</a></li>
+                                <li class="nav-item"><a href="/contact" class="nav-link custom_nav_link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </xpath>
+        </template>
+    </data>
+</odoo>
