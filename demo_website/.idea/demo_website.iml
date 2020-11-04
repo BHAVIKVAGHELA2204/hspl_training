@@ -16,5 +16,6 @@
     <orderEntry type="module" module-name="my_modules" />
     <orderEntry type="module" module-name="my_task" />
     <orderEntry type="module" module-name="test_custom_theme" />
+    <orderEntry type="module" module-name="theme_hspl_emerald" />
   </component>
 </module>

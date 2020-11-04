@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_footer_1" inherit_id="website.footer_custom" name="custom_footer_1">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo custom_footer" t-ignore="true" t-if="not no_footer">
+                    <section class="s_text_block py40">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-lg-12">
+                                    <h5 class="footer_text">Blog template built for
+                                        <a href="/" class="footer_link">Bootstrap</a> by
+                                        <a href="/" class="footer_link">@mdo.</a>
+                                    </h5>
+                                    <h5><a href="/" class="footer_link">Back to top</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="custom_footer_2" inherit_id="web.frontend_layout" name="custom_footer_2">
+            <xpath expr="//div[@class='o_footer_copyright']" position="replace">
+            </xpath>
+        </template>
+    </data>
+</odoo>

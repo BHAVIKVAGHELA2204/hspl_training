@@ -11,8 +11,7 @@
 .custom_nav{
     height : 60px !important;
     border-top : 1px solid #e5e5e5;
-    background-color: #504949 !important;
-    color: #fff;
+    color: #000;
 }
 .align-items{
     align-items: center!important;
@@ -23,9 +22,12 @@
     transform: translateX(-50%);
 }
 .custom_nav_center .navbar-nav .nav-item .nav-link{
-    font-size: 15px;
-    color: #fff !important;
+    font-size: 16px;
+    color: #6c757d !important;
     padding: 0px 20px;
+}
+.custom_link{
+    font-size: 16px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #7C7BAD !important;
@@ -34,5 +36,33 @@
 .navbar-light .navbar-nav .btn_nav_link:hover {
     color: #fff !important;
     text-decoration: none;
-    background-color : #7C7BAD;
+    background-color : #6c757d;
 }
+.navbar-light{
+    background-color : #fff !important;
+}
+.nav_container{
+    padding: 0px !important;
+}
+/*  Footer CSS*/
+.footer_text{
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+.footer_link{
+    color: #0788e0;
+    font-size: 16px;
+}
+.footer_link:hover{
+    color: #1756C0;
+}
+.py40{
+    padding: 40px;
+}
+.custom_footer{
+    background-color: #f9f9f9 !important;
+    border-top: .05rem solid #e5e5e5 !important;
+}
+/* snippets CSS */
+

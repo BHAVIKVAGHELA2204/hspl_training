@@ -1,14 +1,14 @@
 <odoo>
     <data>
-        <template id="custom_frontend_layout" name="Main Frontend Layout" inherit_id="portal.frontend_layout">
+        <template id="header_1" name="header_1" inherit_id="portal.frontend_layout">
             <xpath expr="//div[@id='wrapwrap']/header/nav/div[hasclass('container')]" position="replace">
-                <div class="container">
-                    <div class="col-md-4">
-                        <a href="/" class="navbar-brand logo">
+                <div class="container my-1 nav_container">
+                    <div class="col-md-4 nav_container">
+                        <a href="/" class="navbar-brand logo nav_container">
                             <span data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image"
                                   data-oe-expression="website.logo" role="img" aria-label="Logo of My Website"
                                   title="My Website">
-                                <a class="text-muted" href="#">Subscribe</a>
+                                <a class="text-muted nav_container custom_link" href="#">Subscribe</a>
                             </span>
                         </a>
                     </div>
@@ -23,7 +23,7 @@
                             </span>
                         </a>
                     </div>
-                    <div class="col-md-4 text-right">
+                    <div class="col-md-4 text-right nav_container">
                         <div class="btn-group">
                             <div class="custom_search">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -37,7 +37,6 @@
                             <div class="collapse navbar-collapse" id="top_menu_collapse">
                                 <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
                                 <ul class="nav navbar-nav ml-auto text-right custom_btn" id="custom_top_menu">
-                                    <li class="nav-item divider" t-ignore="true" t-if="not user_id._is_public()"/>
                                     <li class="nav-item dropdown" t-ignore="true" t-if="not user_id._is_public()">
                                         <a href="#" class="nav-link btn_nav_link custom_lilo dropdown-toggle" data-toggle="dropdown">
                                             <b>
@@ -51,10 +50,9 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="nav-item divider" groups="base.group_public"/>
                                     <li groups="base.group_public" class="nav-item">
                                         <a t-attf-href="/web/login" class="nav-link custom_lilo">
-                                            <b>Sign in</b>
+                                            <b>Sign up</b>
                                         </a>
                                     </li>
                                 </ul>
@@ -63,10 +61,11 @@
                     </div>
                 </div>
             </xpath>
-
+        </template>
+        <template id="header_2" name="header_2" inherit_id="portal.frontend_layout">
             <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
-                <nav class="navbar navbar-expand-md navbar-light bg-light custom_nav">
-                    <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <div class="container custom_nav">
                         <button type="button" class="navbar-toggler" data-toggle="collapse"
                                 data-target="#custom_top_menu_collapse">
                             <span class="navbar-toggler-icon"/>

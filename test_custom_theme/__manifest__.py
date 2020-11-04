@@ -9,7 +9,10 @@
 
     'data': [
         'views/assets.xml',
-        'views/templates.xml',
+        'templates/headers.xml',
+        'templates/footer.xml',
+        'templates/snippets.xml',
+        'views/home.xml',
     ],
     'installable': True,
     'application': True,
