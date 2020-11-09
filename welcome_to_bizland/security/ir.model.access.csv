@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_../../hspl_training/welcome_to_bizland_../../hspl_training/welcome_to_bizland,../../hspl_training/welcome_to_bizland.../../hspl_training/welcome_to_bizland,model_../../hspl_training/welcome_to_bizland_../../hspl_training/welcome_to_bizland,base.group_user,1,1,1,1

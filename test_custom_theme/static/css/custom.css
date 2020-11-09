@@ -101,11 +101,13 @@ pre{
     border-top: .05rem solid #e5e5e5 !important;
 }
 /* snippets CSS */
-.custom_pl{
-    padding-left: 0px;
-}
-.custom_pr{
-    padding-right: 0px;
+@media only screen and (min-width: 1025px) {
+    .custom_pl{
+        padding-left: 0px;
+    }
+    .custom_pr{
+        padding-right: 0px;
+    }
 }
 .custom_btn_bnav{
     border-radius: 2rem;
