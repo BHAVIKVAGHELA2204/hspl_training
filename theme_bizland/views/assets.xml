@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_bizland_css" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <link href="theme_bizland/static/src/img/favicon.png" rel="icon"/>
+            <link href="theme_bizland/static/src/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+                  rel="stylesheet"/>
+            <!-- Vendor CSS Files -->
+            <link href="theme_bizland/static/src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+            <link href="theme_bizland/static/src/vendor/icofont/icofont.min.css" rel="stylesheet"/>
+            <link href="theme_bizland/static/src/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+            <link href="theme_bizland/static/src/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+            <link href="theme_bizland/static/src/vendor/venobox/venobox.css" rel="stylesheet"/>
+            <link href="theme_bizland/static/src/vendor/aos/aos.css" rel="stylesheet"/>
+            <!-- Template Main CSS File -->
+            <link href="theme_bizland/static/src/css/style.css" rel="stylesheet"/>
+        </xpath>
+        <xpath expr="script[last()]" position="after">
+            <!--<script type="text/javascript" src="theme_bizland/static/src/vendor/jquery/jquery.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/bootstrap/js/bootstrap.bundle.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/jquery.easing/jquery.easing.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/php-email-form/validate.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/waypoints/jquery.waypoints.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/counterup/counterup.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/owl.carousel/owl.carousel.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/isotope-layout/isotope.pkgd.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/venobox/venobox.min.js"/>
+            <script type="text/javascript" src="theme_bizland/static/src/vendor/aos/aos.js"/>
+            &lt;!&ndash; Template Main JS File &ndash;&gt; -->
+            <script type="text/javascript" src="theme_bizland/static/src/js/main.js"/>
+        </xpath>
+    </template>
+</odoo>

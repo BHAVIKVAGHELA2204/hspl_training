@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../odoo/13.0/.idea/13.0.iml" filepath="$PROJECT_DIR$/../../odoo/13.0/.idea/13.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test_custom_theme/.idea/test_custom_theme.iml" filepath="$PROJECT_DIR$/../test_custom_theme/.idea/test_custom_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/theme_bizland.iml" filepath="$PROJECT_DIR$/.idea/theme_bizland.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../theme_hspl_emerald/.idea/theme_hspl_emerald.iml" filepath="$PROJECT_DIR$/../theme_hspl_emerald/.idea/theme_hspl_emerald.iml" />
+    </modules>
+  </component>
+</project>
