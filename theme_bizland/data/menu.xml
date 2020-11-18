@@ -1,0 +1,32 @@
+<odoo>
+    <record id="bizland_about_menu" model="website.menu">
+        <field name="name">About</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+    <record id="bizland_services_menu" model="website.menu">
+        <field name="name">Services</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+    <record id="bizland_portfolio_menu" model="website.menu">
+        <field name="name">Portfolio</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">40</field>
+    </record>
+    <record id="bizland_team_menu" model="website.menu">
+        <field name="name">Team</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+    <record id="bizland_dropdown_menu" model="website.menu">
+        <field name="name">Dropdown</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

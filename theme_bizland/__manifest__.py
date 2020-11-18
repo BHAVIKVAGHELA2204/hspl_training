@@ -4,13 +4,21 @@
     'category': 'Theme/Business',
     'summary': '',
     'version': '1.0',
-    'depends': ['website', 'website_theme_install'],
+    'depends': ['website', 'website_theme_install', 'portal'],
     'data': [
+        'data/menu.xml',
         'views/assets.xml',
         'views/header.xml',
+        'views/footer.xml',
+        'views/snippets.xml',
+        # 'views/index.xml',
+        'views/templates.xml',
     ],
     'images': [
         'static/description/bizland_logo.png',
+    ],
+    'qweb': [
+        'static/src/xml/index.xml',
     ],
 
     'author': 'Bhavik Vaghela',

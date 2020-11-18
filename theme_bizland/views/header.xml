@@ -1,6 +1,6 @@
 <odoo>
-    <template id="custom_header" inherit_id="website.layout" name="Custom Header">
-        <xpath expr="//div[@id='wrapwrap']/header" position="before">
+    <template id="custom_bizland_header" inherit_id="portal.frontend_layout" name="custom bizland header">
+        <xpath expr="//header" position="before">
             <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
                 <div class="container d-flex">
                     <div class="contact-info mr-auto">
@@ -17,10 +17,22 @@
                 </div>
             </div>
         </xpath>
-        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+        <xpath expr="//header" position="attributes">
             <attribute name="id">header</attribute>
             <attribute name="t-attf-class" add="fixed-top" separator=" "/>
         </xpath>
-
+        <!-- <xpath expr="//nav[hasclass('navbar-expand-md')]" position="attributes">
+             <attribute name="class">nav-menu d-none d-lg-block
+             </attribute>
+         </xpath>
+         <xpath expr="//ul[@id='top_menu']/li[hasclass('dropdown')]" position="attributes">
+             <attribute name="class">nav-item dropdown d-lg-none d-block</attribute>
+         </xpath>-->
     </template>
+    <!--<template id="theme_bizland_show_sign_in" inherit_id="portal.portal_show_sign_in" name="theme bizland show sign in">
+        <xpath expr="//li[@groups='base.group_public']" position="replace">
+        </xpath>
+        <xpath expr="//li[@groups='base.group_public']" position="replace">
+        </xpath>
+    </template>-->
 </odoo>
