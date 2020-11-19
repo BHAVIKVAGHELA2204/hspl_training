@@ -23,7 +23,7 @@
     </template>
     <template id="bizland_banner" name="Banner">
         <section id="hero" class="d-flex align-items-center">
-            <div class="container" data-aos="zoom-out" data-aos-delay="100">
+            <div class="container">
                 <h1>Welcome to <span>BizLand</span>
                 </h1>
                 <h2>We are team of talanted designers making websites with Bootstrap</h2>
@@ -35,11 +35,10 @@
             </div>
         </section>
         <section id="featured-services" class="featured-services">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box">
                             <div class="icon"><i class="bx bxl-dribbble"></i></div>
                             <h4 class="title"><a href="">Lorem Ipsum</a></h4>
                             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
@@ -48,7 +47,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
                             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -57,23 +56,22 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4 class="title"><a href="">Magni Dolores</a></h4>
                             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia</p>Ullamco laboris nisi ut aliquip consequat
+                                officia</p>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Nemo Enim</a></h4>
                             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
                                 blanditiis</p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -81,7 +79,7 @@
     </template>
     <template id="bizland_about" name="About">
         <section id="about" class="about section-bg">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
 
                 <div class="section-title">
                     <h2>About</h2>
@@ -91,11 +89,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+                    <div class="col-lg-6">
                         <img src="/theme_bizland/static/src/img/about.jpg" class="img-fluid" alt=""/>
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
-                         data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center">
                         <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                         <p class="font-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -132,20 +129,128 @@
 
             </div>
         </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="row skills-content">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <span class="skill">HTML <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">CSS <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">JavaScript <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <span class="skill">PHP <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="skill">Photoshop <i class="val">55%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="counts" class="counts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count-box">
+                            <i class="icofont-simple-smile"></i>
+                            <span data-toggle="counter-up">232</span>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="count-box">
+                            <i class="icofont-document-folder"></i>
+                            <span data-toggle="counter-up">521</span>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="icofont-live-support"></i>
+                            <span data-toggle="counter-up">1,463</span>
+                            <p>Hours Of Support</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="icofont-users-alt-5"></i>
+                            <span data-toggle="counter-up">15</span>
+                            <p>Hard Workers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-1.png" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-2.png" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-3.png" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-4.png" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-5.png" class="img-fluid" alt=""/>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="theme_bizland/static/src/img/clients/client-6.png" class="img-fluid" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
     </template>
     <template id="bizland_services" name="Services">
         <section id="services" class="services">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>Services</h2>
                     <h3>Check our <span>Services</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bxl-dribbble"></i></div>
                             <h4><a href="">Lorem Ipsum</a></h4>
@@ -153,8 +258,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                         data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4><a href="">Sed ut perspiciatis</a></h4>
@@ -162,8 +266,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                         data-aos-delay="300">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4><a href="">Magni Dolores</a></h4>
@@ -171,8 +274,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                         data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4><a href="">Nemo Enim</a></h4>
@@ -180,8 +282,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                         data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-slideshow"></i></div>
                             <h4><a href="">Dele cardo</a></h4>
@@ -189,8 +290,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                         data-aos-delay="300">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bx-arch"></i></div>
                             <h4><a href="">Divera don</a></h4>
@@ -203,10 +303,8 @@
             </div>
         </section>
         <section id="testimonials" class="testimonials">
-            <div class="container" data-aos="zoom-in">
-
+            <div class="container">
                 <div class="owl-carousel testimonials-carousel">
-
                     <div class="testimonial-item">
                         <img src="theme_bizland/static/src/img/testimonials/testimonials-1.jpg" class="testimonial-img"
                              alt=""/>
@@ -219,7 +317,6 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
-
                     <div class="testimonial-item">
                         <img src="theme_bizland/static/src/img/testimonials/testimonials-2.jpg" class="testimonial-img"
                              alt=""/>
@@ -233,7 +330,6 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
-
                     <div class="testimonial-item">
                         <img src="theme_bizland/static/src/img/testimonials/testimonials-3.jpg" class="testimonial-img"
                              alt=""/>
@@ -246,7 +342,6 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
-
                     <div class="testimonial-item">
                         <img src="theme_bizland/static/src/img/testimonials/testimonials-4.jpg" class="testimonial-img"
                              alt=""/>
@@ -260,7 +355,6 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
-
                     <div class="testimonial-item">
                         <img src="theme_bizland/static/src/img/testimonials/testimonials-5.jpg" class="testimonial-img"
                              alt=""/>
@@ -274,24 +368,20 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
-
                 </div>
-
             </div>
         </section>
     </template>
     <template id="bizland_portfolio" name="Portfolio">
         <section id="portfolio" class="portfolio">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>Portfolio</h2>
                     <h3>Check our <span>Portfolio</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
@@ -301,9 +391,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+                <div class="row portfolio-container">
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -316,7 +404,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -329,7 +416,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -342,7 +428,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -355,7 +440,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -368,7 +452,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -381,7 +464,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -394,7 +476,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -407,7 +488,6 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <img src="theme_bizland/static/src/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""/>
                         <div class="portfolio-info">
@@ -426,18 +506,15 @@
     </template>
     <template id="bizland_team" name="team">
         <section id="team" class="team section-bg">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>Team</h2>
                     <h3>Our Hardworking <span>Team</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
                 <div class="row">
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member">
                             <div class="member-img">
                                 <img src="theme_bizland/static/src/img/team/team-1.jpg" class="img-fluid" alt=""/>
@@ -454,8 +531,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member">
                             <div class="member-img">
                                 <img src="theme_bizland/static/src/img/team/team-2.jpg" class="img-fluid" alt=""/>
@@ -473,7 +549,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member">
                             <div class="member-img">
                                 <img src="theme_bizland/static/src/img/team/team-3.jpg" class="img-fluid" alt=""/>
@@ -491,7 +567,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member">
                             <div class="member-img">
                                 <img src="theme_bizland/static/src/img/team/team-4.jpg" class="img-fluid" alt=""/>
@@ -514,18 +590,15 @@
             </div>
         </section>
         <section id="pricing" class="pricing">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>Pricing</h2>
                     <h3>Check our <span>Pricing</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
                 <div class="row">
-
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-6">
                         <div class="box">
                             <h3>Free</h3>
                             <h4><sup>$</sup>0<span> / month</span></h4>
@@ -541,8 +614,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
                         <div class="box featured">
                             <h3>Business</h3>
                             <h4><sup>$</sup>19<span> / month</span></h4>
@@ -558,8 +630,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
                         <div class="box">
                             <h3>Developer</h3>
                             <h4><sup>$</sup>29<span> / month</span></h4>
@@ -575,8 +646,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
                         <div class="box">
                             <span class="advanced">Advanced</span>
                             <h3>Ultimate</h3>
@@ -593,23 +663,18 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <section id="faq" class="faq section-bg">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>F.A.Q</h2>
                     <h3>Frequently Asked <span>Questions</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
-                <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
-
+                <ul class="faq-list">
                     <li>
                         <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna
                             duis? <i class="icofont-simple-up"></i></a>
@@ -621,7 +686,6 @@
                             </p>
                         </div>
                     </li>
-
                     <li>
                         <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim
                             nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
@@ -634,7 +698,6 @@
                             </p>
                         </div>
                     </li>
-
                     <li>
                         <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing
                             elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
@@ -647,7 +710,6 @@
                             </p>
                         </div>
                     </li>
-
                     <li>
                         <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam
                             eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
@@ -660,7 +722,6 @@
                             </p>
                         </div>
                     </li>
-
                     <li>
                         <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam
                             aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
@@ -672,7 +733,6 @@
                             </p>
                         </div>
                     </li>
-
                     <li>
                         <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare.
                             Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
@@ -692,16 +752,14 @@
     </template>
     <template id="bizland_contact" name="contact">
         <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
+            <div class="container">
                 <div class="section-title">
                     <h2>Contact</h2>
                     <h3><span>Contact Us</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.</p>
                 </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="info-box mb-4">
                             <i class="bx bx-map"></i>
@@ -709,7 +767,6 @@
                             <p>A108 Adam Street, New York, NY 535022</p>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="info-box  mb-4">
                             <i class="bx bx-envelope"></i>
@@ -717,7 +774,6 @@
                             <p>contact@example.com</p>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="info-box  mb-4">
                             <i class="bx bx-phone-call"></i>
@@ -725,10 +781,9 @@
                             <p>+1 5589 55488 55</p>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
 
                     <div class="col-lg-6 ">
                         <iframe class="mb-4 mb-lg-0"

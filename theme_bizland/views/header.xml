@@ -21,18 +21,21 @@
             <attribute name="id">header</attribute>
             <attribute name="t-attf-class" add="fixed-top" separator=" "/>
         </xpath>
-        <!-- <xpath expr="//nav[hasclass('navbar-expand-md')]" position="attributes">
-             <attribute name="class">nav-menu d-none d-lg-block
-             </attribute>
-         </xpath>
-         <xpath expr="//ul[@id='top_menu']/li[hasclass('dropdown')]" position="attributes">
-             <attribute name="class">nav-item dropdown d-lg-none d-block</attribute>
-         </xpath>-->
+        <xpath expr="//header/nav" position="attributes">
+            <attribute name="class">navbar navbar-expand-md</attribute>
+        </xpath>
+        <xpath expr="//ul[@id='top_menu']" position="attributes">
+            <attribute name="class"></attribute>
+        </xpath>
+        <!--<xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+            <attribute name="class">nav-item active</attribute>
+        </xpath>-->
+        <xpath expr="//ul[@id='top_menu']/li[hasclass('divider')]" position="replace">
+        </xpath>
+        <xpath expr="//ul[@id='top_menu']/li[hasclass('dropdown')]" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='top_menu_collapse']" position="attributes">
+            <attribute name="class">nav-menu d-none d-lg-block</attribute>
+        </xpath>
     </template>
-    <!--<template id="theme_bizland_show_sign_in" inherit_id="portal.portal_show_sign_in" name="theme bizland show sign in">
-        <xpath expr="//li[@groups='base.group_public']" position="replace">
-        </xpath>
-        <xpath expr="//li[@groups='base.group_public']" position="replace">
-        </xpath>
-    </template>-->
 </odoo>

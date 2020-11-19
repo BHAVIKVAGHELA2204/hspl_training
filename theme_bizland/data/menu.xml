@@ -1,32 +1,43 @@
 <odoo>
     <record id="bizland_about_menu" model="website.menu">
         <field name="name">About</field>
-        <field name="url">#</field>
+        <field name="url">#about</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">20</field>
+        <field name="sequence" type="int">11</field>
     </record>
     <record id="bizland_services_menu" model="website.menu">
         <field name="name">Services</field>
-        <field name="url">#</field>
+        <field name="url">#services</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">30</field>
+        <field name="sequence" type="int">12</field>
     </record>
     <record id="bizland_portfolio_menu" model="website.menu">
         <field name="name">Portfolio</field>
-        <field name="url">#</field>
+        <field name="url">#portfolio</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">40</field>
+        <field name="sequence" type="int">13</field>
     </record>
     <record id="bizland_team_menu" model="website.menu">
         <field name="name">Team</field>
-        <field name="url">#</field>
+        <field name="url">#team</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">50</field>
+        <field name="sequence" type="int">14</field>
     </record>
     <record id="bizland_dropdown_menu" model="website.menu">
-        <field name="name">Dropdown</field>
-        <field name="url">#</field>
+        <field name="name">Drop down</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">60</field>
+        <field name="sequence" type="int">15</field>
+    </record>
+    <!--<record id="bizland_dropdown_menu_1" model="website.menu">
+        <field name="name">Dropdown 1</field>
+        <field name="url">#</field>
+        <field name="parent_id" ref="theme_bizland.bizland_dropdown_menu"/>
+        <field name="sequence" type="int">1</field>
+    </record>-->
+    <record id="bizland_contact_menu" model="website.menu">
+        <field name="name">Contact</field>
+        <field name="url">#contact</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">16</field>
     </record>
 </odoo>

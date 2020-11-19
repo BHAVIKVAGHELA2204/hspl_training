@@ -1,4 +1,4 @@
-<odoo>z
+<odoo>
     <template id="custom_bizland_footer" inherit_id="website.layout" name="custom bizland footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <footer id="footer">
@@ -22,7 +22,13 @@
                         <div class="row">
 
                             <div class="col-lg-3 col-md-6 footer-contact">
-                                <h3>BizLand<span>.</span></h3>
+                                <h3>
+                                    <a href="/" class="logo">
+                                        <span t-field="website.logo" class="" t-options="{'widget': 'image'}" role="img"
+                                              t-att-aria-label="'Logo of %s' % website.name"
+                                              t-att-title="website.name"/>
+                                    </a>
+                                </h3>
                                 <p>
                                     A108 Adam Street <br/>
                                     New York, NY 535022<br/>
