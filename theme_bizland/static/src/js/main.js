@@ -4,7 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
+/*!(function($) {*/
+  odoo.define('theme_hspl_emerald.theme_script', function(require) {
   "use strict";
 
   // Preloader
@@ -218,5 +219,6 @@
   $(window).on('load', function() {
     aos_init();
   });
-
-})(jQuery);
+});
+/*
+})(jQuery);*/

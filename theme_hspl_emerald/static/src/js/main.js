@@ -10,14 +10,14 @@ odoo.define('theme_hspl_emerald.theme_script', function(require) {
           //Dropdown menu slidedown on click
           if ($(window).innerWidth() < 1200) {
             $( '.dropdown' ).on( 'show.bs.dropdown', function() {
-              $( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideDown( 150 );
+              $( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideDown( 0 );
             });
             $('.dropdown').on( 'hide.bs.dropdown', function(){
-              $( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideUp( 150 );
+              $( this ).find( '.dropdown-menu' ).first().stop( true, true ).slideUp( 0 );
             });
           }
           //Dropdown menu slidedown on hover
-          else {      
+          else {
             $("#wrapwrap  .dropdown").each(function(){
               if(! $(this).closest(".o_extra_menu_items").length ) {
                 $(this).closest("a").click(function(){return false;});

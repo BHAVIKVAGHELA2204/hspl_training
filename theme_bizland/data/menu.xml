@@ -28,12 +28,13 @@
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">15</field>
     </record>
-    <!--<record id="bizland_dropdown_menu_1" model="website.menu">
+
+    <record id="bizland_dropdown_menu_1" model="website.menu">
         <field name="name">Dropdown 1</field>
         <field name="url">#</field>
-        <field name="parent_id" ref="theme_bizland.bizland_dropdown_menu"/>
+        <field name="parent_id" ref="bizland_dropdown_menu"/>
         <field name="sequence" type="int">1</field>
-    </record>-->
+    </record>
     <record id="bizland_contact_menu" model="website.menu">
         <field name="name">Contact</field>
         <field name="url">#contact</field>
