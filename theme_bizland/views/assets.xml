@@ -8,7 +8,7 @@
             <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
                   rel="stylesheet"/>
             <!-- Vendor CSS Files -->
-            <link type="text/css" href="/theme_bizland/static/src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+            <!--<link type="text/css" href="/theme_bizland/static/src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>-->
             <link type="text/css" href="/theme_bizland/static/src/vendor/icofont/icofont.min.css" rel="stylesheet"/>
             <link type="text/css" href="/theme_bizland/static/src/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
             <link type="text/css" href="/theme_bizland/static/src/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"/>
@@ -29,7 +29,7 @@
             <script type="text/javascript" src="/theme_bizland/static/src/vendor/venobox/venobox.min.js"/>
             <script type="text/javascript" src="/theme_bizland/static/src/vendor/aos/aos.js"/>
             <!-- Template Main JS File -->
-            <script type="text/javascript" src="/theme_bizland/static/src/js/main.js"/>
+            <script type="text/javascript" src="/theme_bizland/static/src/js/main.js"/>s
         </xpath>
     </template>
 </odoo>

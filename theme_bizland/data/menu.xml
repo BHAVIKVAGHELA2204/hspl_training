@@ -24,7 +24,7 @@
         <field name="sequence" type="int">14</field>
     </record>
     <record id="bizland_dropdown_menu" model="website.menu">
-        <field name="name">Drop down</field>
+        <field name="name">Drop Down</field>
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">15</field>
     </record>

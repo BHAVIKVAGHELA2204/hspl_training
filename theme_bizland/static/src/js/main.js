@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 /*!(function($) {*/
-  odoo.define('theme_hspl_emerald.theme_script', function(require) {
+  odoo.define('theme_bizland.theme_script', function(require) {
   "use strict";
 
   // Preloader
@@ -18,6 +18,7 @@
   });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
+/*
   var scrolltoOffset = $('#header').outerHeight() - 21;
   if (window.matchMedia("(max-width: 991px)").matches) {
     scrolltoOffset += 20;
@@ -65,6 +66,7 @@
       }
     }
   });
+*/
 
   // Navigation active state on scroll
   var nav_sections = $('section');
@@ -197,6 +199,12 @@
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
+    console.log("hello");
+        $('#top_menu').on('click', 'li', function() {
+
+            $('#top_menu li.active').removeClass('active');
+            $(this).addClass('active');
+        });
       $('.venobox').venobox();
     });
   });

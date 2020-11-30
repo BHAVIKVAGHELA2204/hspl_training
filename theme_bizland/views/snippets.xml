@@ -303,7 +303,7 @@
             </div>
         </section>
         <section id="testimonials" class="testimonials">
-            <div class="container" data-aos="zoom-in">
+            <div class="container">
                 <div class="owl-carousel testimonials-carousel">
                     <div class="testimonial-item">
                         <img src="/theme_bizland/static/src/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""/>
@@ -354,6 +354,7 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
+
                     <div class="testimonial-item">
                         <img src="/theme_bizland/static/src/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""/>
                         <h3>John Larson</h3>
@@ -366,7 +367,9 @@
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
                     </div>
+
                 </div>
+
             </div>
         </section>
     </template>

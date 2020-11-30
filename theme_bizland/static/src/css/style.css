@@ -1820,3 +1820,21 @@ section {
     padding: 2px 0;
   }
 }
+
+.o_header_affix{
+    display: none;
+}
+
+.mt140{
+    margin-top: 140px !important;
+}
+
+/*body.o_connected_user > div#wrapwrap > header {
+    top: 46px;
+}
+body.o_connected_user > div#topbar {
+    top: 86px;
+}*/
+/*body.o_connected_user > #topbar{
+    margin-top: 86px;
+}*/

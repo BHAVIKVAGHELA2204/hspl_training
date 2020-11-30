@@ -17,9 +17,11 @@
                 </div>
             </div>
         </xpath>
+        <!--<xpath expr="//header[hasclass('header-scrolled')]" position="replace">
+        </xpath>-->
         <xpath expr="//header" position="attributes">
             <attribute name="id">header</attribute>
-            <attribute name="t-attf-class" add="fixed-top" separator=" "/>
+            <attribute name="t-attf-class" add="fixed-top bizland_header" separator=" "/>
         </xpath>
         <xpath expr="//header/nav" position="attributes">
             <attribute name="class">navbar navbar-expand-md</attribute>
@@ -38,4 +40,16 @@
             <attribute name="class">nav-menu d-none d-lg-block</attribute>
         </xpath>
     </template>
+    <!--<template id="lad_home" inherit_id="portal.frontend_layout" name="Home">
+        <xpath expr="//t[1]" position="inside">
+            <script>
+                $('#top_menu').on('click', 'li', function() {
+                    alert("test");
+                    $('#top_menu li.active').removeClass('active');
+                    $(this).addClass('active');
+                });
+                AOS.init();
+            </script>
+        </xpath>
+    </template>-->
 </odoo>
