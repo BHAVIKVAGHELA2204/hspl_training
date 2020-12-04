@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <function model="ir.model.fields" name="formbuilder_whitelist">
+            <value>crm.lead</value>
+            <value eval="[
+                'contact_name',
+                'description',
+                'email_from',
+                'name',
+                'partner_name',
+                'phone',
+                'mobile',
+                'team_id',
+                'user_id',
+                'street',
+                'street2',
+                'city',
+                'zip',
+                'function',
+                'number_of_emp'
+            ]"/>
+        </function>
+    </data>
+</odoo>

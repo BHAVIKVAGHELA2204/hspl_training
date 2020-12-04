@@ -7,6 +7,7 @@
     'depends': ['website', 'website_theme_install', 'portal', 'website_crm'],
     'data': [
         'data/menu.xml',
+        'data/website_crm_data.xml' ,
         'views/assets.xml',
         'views/header.xml',
         'views/footer.xml',
@@ -14,6 +15,7 @@
         'views/contact.xml',
         # 'views/index.xml',
         'views/templates.xml',
+        'views/crm_lead_inherit.xml',
     ],
     'images': [
         'static/description/bizland_logo.png',
